@@ -1,7 +1,8 @@
-// تحديد الزر
+// click تحديد الزر
 const toggleButton = document.getElementById('theme-toggle');
 const body = document.body;
 
+// Interactivity script
 // إضافة مستمع للحدث (Event Listener)
 toggleButton.addEventListener('click', () => {
     // تبديل كلاس الوضع الليلي
