@@ -1,0 +1,55 @@
+/* متغيرات الألوان لسهولة التعديل ولدعم الوضع الليلي */
+:root {
+    --bg-color: #f4f4f4;
+    --text-color: #333;
+    --primary-color: #007bff;
+}
+
+/* تنسيق الوضع الليلي */
+.dark-mode {
+    --bg-color: #1a1a1a;
+    --text-color: #f4f4f4;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    margin: 0;
+    padding: 20px;
+    line-height: 1.6;
+    transition: background-color 0.3s, color 0.3s; /* نعومة الانتقال */
+}
+
+header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.profile-img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid var(--primary-color);
+}
+
+section {
+    background: white; /* يمكنك تغييرها في الوضع الليلي */
+    padding: 20px;
+    margin-bottom: 15px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.dark-mode section {
+    background: #2c2c2c;
+    box-shadow: none;
+}
+
+/* التجاوب مع الجوال */
+@media (max-width: 600px) {
+    body {
+        padding: 10px;
+    }
+}
